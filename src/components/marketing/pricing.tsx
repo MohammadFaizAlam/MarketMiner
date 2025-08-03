@@ -15,15 +15,15 @@ type Plan = "monthly" | "yearly";
 
 const Pricing = () => {
     return (
-        <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full relative">
+        <div id="pricing" className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24  w-full relative">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-xl mx-auto">
                     <SectionBadge title="Choose your plan" />
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Simple and transparent pricing
+                        Intelligence, On Your Terms
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                        Choose the plan that suits your needs. No hidden fees, no surprises.
+                        Choose between instant access or insider-level updates — both designed to keep you ahead while your competitors play catch-up.
                     </p>
                 </div>
             </Container>
@@ -34,10 +34,10 @@ const Pricing = () => {
                     <Tabs defaultValue="monthly" className="w-full flex flex-col items-center justify-center">
                         <TabsList>
                             <TabsTrigger value="monthly">
-                                Monthly
+                                One-Time
                             </TabsTrigger>
                             <TabsTrigger value="yearly">
-                                Yearly
+                                Monthly
                             </TabsTrigger>
                         </TabsList>
                         <TabsContent value="monthly">
@@ -136,10 +136,17 @@ const Plan = ({
                             <span className="text-3xl md:text-4xl font-bold">
                                 ${displayedPrice === 0 ? 0 : <NumberTicker value={displayedPrice} />}
                             </span>
+
                             {/* In here 120 * 0.8 = 96 and /12 to get monthly price */}
-                            <span className="text-lg text-muted-foreground font-medium font-headin">
+                            
+                            {/* <span className="text-lg text-muted-foreground font-medium font-headin">
                                 per {plan === "monthly" ? "month" : "month"}
+                            </span> */}
+
+                            <span className="text-lg text-muted-foreground font-medium font-headin">
+                                {plan === "yearly" ? "month" : ""}
                             </span>
+
                         </div>
                         <AnimatePresence>
                             {(id !== "free" && plan === "yearly") && (
@@ -151,7 +158,7 @@ const Plan = ({
                                     aria-hidden="true"
                                     className="text-xs px-2 py-0.5 rounded mb-1 text-foreground bg-primary font-medium"
                                 >
-                                    -20%
+                                    -15%
                                 </motion.span>
                             )}
                         </AnimatePresence>

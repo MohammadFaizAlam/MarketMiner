@@ -17,31 +17,40 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Smart Social Media Marketing Platform`,
-    description = "Streamline your social media management with AI-powered analytics, scheduling, and content optimization. Get real-time insights, automate posts, and boost engagement across all platforms",
+    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Data Driven Intelligence for Agencies`,
+    description = "Unlock premium digital intelligence assets like ad breakdowns, lead lists, and market insights. Built for growth-focused SEO, real estate & ad agencies.",
     image = "/thumbnail.png",
     icons = [
         {
             rel: "icon",
             type: "image/png",
             sizes: "32x32",
-            url: "/icons/favicon-32x32.png"
+            url: "/icons/marketminer.jpg"
         },
         {
             rel: "icon",
             type: "image/png",
             sizes: "16x16",
-            url: "/icons/favicon-16x16.png"
+            url: "/icons/marketminer.jpg"
         },
     ],
     noIndex = false,
     keywords = [
-        "AI content creation",
-        "content automation",
-        "AI writing assistant",
-        "content generation",
-        "artificial intelligence",
-        "content marketing"
+        "digital intelligence assets",
+        "lead lists for agencies",
+        "ad breakdowns for marketers",
+        "curated data sheets",
+        "SEO agency resources",
+        "real estate lead generation",
+        "market insights for ad agencies",
+        "intelligence as a service",
+        "micro B2B data tools",
+        "competitor research tools",
+        "agency growth tools",
+        "done-for-you data reports",
+        "B2B data automation",
+        "marketminer tools",
+        "targeted B2B leads"
     ],
     author = process.env.NEXT_PUBLIC_AUTHOR_NAME,
     twitterHandle = "@yourtwitterhandle",
@@ -51,7 +60,7 @@ export const generateMetadata = ({
     publishedTime,
     modifiedTime
 }: MetadataProps = {}): Metadata => {
-    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://luro-ai.vercel.app");
+    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://marketminer.vercel.app");
     const imageUrl = image ? new URL(image, metadataBase).toString() : null;
 
     return {

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // reactStrictMode: false, // Add this line to reduce warnings
     images: {
         remotePatterns: [
             {

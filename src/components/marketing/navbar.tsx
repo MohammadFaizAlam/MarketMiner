@@ -43,14 +43,20 @@ const Navbar = () => {
                 <Wrapper className="backdrop-blur-lg rounded-xl lg:rounded-2xl border border-[rgba(124,124,124,0.2)] px- md:px-2 flex items-center justify-start">
                     <div className="flex items-center justify-between w-full sticky mt-[7px] lg:mt-auto mb-auto inset-x-0">
                         <div className="flex items-center flex-1 lg:flex-none pl-1">
-                            <Link href="/" className="text-lg font-semibold text-foreground">
-                                <Icons.icon className="w-auto h-5" />
+
+                            {/* <Link href="/" className="text-lg font-semibold text-foreground"> */}
+                            <Link href="/" className="text-lg font-semibold text-foreground flex items-center">
+                            
+                                <Icons.icon className="w-[40px] h-[40px]" />
                             </Link>
                             <div className="items-center hidden ml-4 lg:flex">
                                 <Menu />
                             </div>
                         </div>
-                        <div className="items-center flex gap-2 lg:gap-4">
+
+                        {/* <div className="items-center flex gap-2 lg:gap-4"> */}
+                        <div className="flex items-center gap-2 lg:gap-4">
+                            
                             {user ? (
                                 <Button size="sm" variant="white" asChild className="hidden sm:flex">
                                     <Link href="/app">
@@ -60,15 +66,28 @@ const Navbar = () => {
                             ) : (
                                 <>
                                     <Button size="sm" variant="tertiary" asChild className="hover:translate-y-0 hover:scale-100">
-                                        <Link href="/auth/signin">
+
+                                        {/* <Link href="/auth/signin">
                                             Login
+                                        </Link> */}
+
+                                        <Link href="">
+                                            Free Sample
                                         </Link>
+                                        
                                     </Button>
                                     <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                        <Link href="/auth/signup">
+
+                                        {/* <Link href="/auth/signup">
                                             Start for free
                                             <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
+                                        </Link> */}
+
+                                        <Link href="">
+                                            Use Cases
+                                            <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
                                         </Link>
+
                                     </Button>
                                 </>
                             )}

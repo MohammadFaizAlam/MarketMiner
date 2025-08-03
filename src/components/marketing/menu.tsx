@@ -18,13 +18,13 @@ const Menu = () => {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="#features" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
                             How it works
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
                         Features
                     </NavigationMenuTrigger>
@@ -38,7 +38,7 @@ const Menu = () => {
                                     >
                                         <Icons.icon className="w-6 h-6" />
                                         <div className="my-2 text-lg font-normal">
-                                            Luro AI
+                                            MarketMiner
                                         </div>
                                         <p className="text-sm text-muted-foreground">
                                             Your ultimate social media management tool
@@ -57,22 +57,22 @@ const Menu = () => {
                             </Item>
                         </ul>
                     </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 <NavigationMenuItem>
-                    <Link href="/pricing" legacyBehavior passHref>
+                    <Link href="#pricing" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/integrations" legacyBehavior passHref>
+                    <Link href="#perks" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
-                            Integrations
+                            Perks
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
                         Resources
                     </NavigationMenuTrigger>
@@ -86,7 +86,7 @@ const Menu = () => {
                             </Item>
                         </ul>
                     </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
             </NavigationMenuList>
         </NavigationMenu>
     )

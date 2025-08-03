@@ -20,17 +20,17 @@ const Footer = () => {
                     />
                     <div className="flex flex-col items-start max-w-48">
                         <div className="flex items-center gap-2">
-                            <Icons.icon className="w-5 h-5" />
+                            <Icons.icon className="w-12 h-12" />
                             <span className="text-xl font-medium">
-                                Luro
+                                MarketMiner
                             </span>
                         </div>
                         <p className="text-base max-w mt-4">
-                            Empower your business with our AI tools.
+                            Actionable intelligence for smarter growth.
                         </p>
                         <Button className="mt-8">
                             <Link href="/app">
-                                Start for free
+                                Free Sample Assets
                             </Link>
                         </Button>
                     </div>
@@ -57,7 +57,7 @@ const Footer = () => {
             <Container>
                 <Wrapper className="pt-10 flex items-center justify-between relative">
                     <p className="text-sm text-secondary-foreground">
-                        &copy; {new Date().getFullYear()} Luro. All rights reserved.
+                        &copy; {new Date().getFullYear()} MarketMiner. All rights reserved.
                     </p>
                     <div className="flex items-center gap-4">
                         <Link href="#" className="p-1">
