@@ -17,7 +17,7 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Data Driven Intelligence for Agencies`,
+    title = `MarketMiner - Data Driven Intelligence for Agencies`,
     description = "Unlock premium digital intelligence assets like ad breakdowns, lead lists, and market insights. Built for growth-focused SEO, real estate & ad agencies.",
     image = "/thumbnail.png",
     icons = [

@@ -8,18 +8,18 @@ import Container from "../global/container";
 import { Button, buttonVariants } from "../ui/button";
 
 import { cn } from "@/functions";
-import { useClerk } from "@clerk/nextjs";
+// import { useClerk } from "@clerk/nextjs";
 
 
 const DashboardSidebar = () => {
 
-    const { signOut } = useClerk();
+    // const { signOut } = useClerk();
 
     const pathname = usePathname();
 
-    const handleLogout = async () => {
-        await signOut();
-    };
+    // const handleLogout = async () => {
+         // await signOut();
+    // };
 
     return (
         <div
@@ -73,7 +73,7 @@ const DashboardSidebar = () => {
                         <div className="h-10 w-full">
                             <Button
                                 variant="ghost"
-                                onClick={handleLogout}
+                                // onClick={handleLogout}
                                 className="w-full justify-start"
                             >
                                 <LogOutIcon className="size-4 mr-1.5" />

@@ -1,18 +1,5 @@
-"use client";
+'use client';
 
-import React from "react";
-import ClerkProvider from "@/components/ClerkProviderClient"; // wrapped ClerkProvider
-
-interface Props {
-  children: React.ReactNode;
+export default function Providers({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }
-
-const Providers = ({ children }: Props) => {
-  return (
-    <ClerkProvider>
-      {children}
-    </ClerkProvider>
-  );
-};
-
-export default Providers;
