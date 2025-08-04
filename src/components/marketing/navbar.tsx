@@ -36,7 +36,7 @@ const Navbar = () => {
             <header
                 className={cn(
                     "fixed top-4 inset-x-0 mx-auto max-w-6xl px-2 md:px-12 z-[100] transform th",
-                    isOpen ? "h-[calc(100%-24px)]" : "h-12"
+                    isOpen ? "h-[calc(100%-24px)]" : "h-16"
                 )}
             >
                 <Wrapper className="backdrop-blur-lg rounded-xl lg:rounded-2xl border border-[rgba(124,124,124,0.2)] px- md:px-2 flex items-center justify-start">
@@ -44,7 +44,7 @@ const Navbar = () => {
                         <div className="flex items-center flex-1 lg:flex-none pl-1">
 
                             <Link href="/" className="text-lg font-semibold text-foreground flex items-center">
-                                <Icons.icon className="w-[40px] h-[40px]" />
+                                <Icons.icon className="w-[48px] h-[48px]" />
                             </Link>
                             <div className="items-center hidden ml-4 lg:flex">
                                 <Menu />
