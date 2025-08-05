@@ -56,13 +56,13 @@ const Navbar = () => {
                             {/* Replace the user check with static buttons since auth is removed */}
                             <>
                                 <Button size="sm" variant="tertiary" asChild className="hover:translate-y-0 hover:scale-100">
-                                    <Link href="">
+                                    <Link href="MinerPack.pdf" download>
                                         Free Sample
                                     </Link>
                                 </Button>
                                 <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                    <Link href="">
-                                        Use Cases
+                                    <Link href="https://www.notion.so/Plug-Play-SOP-How-to-Reverse-Engineer-Any-Winning-Ad-Like-a-Pro-2464078144eb808eb1b9fa8dde9cd30c">
+                                        Free SOP
                                         <ArrowRightIcon className="w-4 h-4 ml-2 hidden lg:block" />
                                     </Link>
                                 </Button>

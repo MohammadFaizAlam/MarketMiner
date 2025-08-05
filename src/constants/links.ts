@@ -8,40 +8,42 @@ type Link = {
 
 export const SIDEBAR_LINKS: Link[] = [
     {
-        href: "/dashboard",
-        label: "Dashboard",
-        icon: ChartPieIcon,
-    },
-    {
-        href: "/dashboard/campaigns",
-        label: "Campaigns",
-        icon: MegaphoneIcon
-    },
-    {
-        href: "/dashboard/analytics",
-        label: "Analytics",
-        icon: LineChartIcon
-    },
-    {
-        href: "/dashboard/posts",
-        label: "Posts",
-        icon: MessageSquareTextIcon
-    },
-    {
-        href: "/dashboard/engagement",
-        label: "Engagement",
+    href: "/#home",
+        label: "Home",
+        // icon: MessageSquareTextIcon
         icon: UsersIcon
     },
     {
-        href: "/dashboard/billing",
-        label: "Billing",
-        icon: CreditCardIcon
+        href: "/#features",
+        label: "How it works",
+        icon: ChartPieIcon,
     },
     {
-        href: "/dashboard/settings",
-        label: "Settings",
-        icon: SettingsIcon
+        href: "/#perks",
+        label: "Perks",
+        icon: LineChartIcon
     },
+    {
+        href: "/#pricing",
+        label: "Pricing",
+        // icon: MegaphoneIcon
+        icon: CreditCardIcon
+    },
+    // {
+    //     href: "/dashboard/engagement",
+    //     label: "Engagement",
+    //     icon: UsersIcon
+    // },
+    // {
+    //     href: "/dashboard/billing",
+    //     label: "Billing",
+    //     icon: CreditCardIcon
+    // },
+    // {
+    //     href: "/dashboard/settings",
+    //     label: "Settings",
+    //     icon: SettingsIcon
+    // },
 ];
 
 export const FOOTER_LINKS = [

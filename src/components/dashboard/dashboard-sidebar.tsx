@@ -29,7 +29,7 @@ const DashboardSidebar = () => {
             <div className={cn(
                 "flex flex-col size-full p-3"
             )}>
-                <Container delay={0.2} className="h-max">
+                {/* <Container delay={0.2} className="h-max">
                     <Button
                         variant="outline"
                         className="w-full justify-between px-2"
@@ -44,7 +44,7 @@ const DashboardSidebar = () => {
                             ⌘K
                         </span>
                     </Button>
-                </Container>
+                </Container> */}
                 <ul className="w-full space-y-2 py-5">
                     {SIDEBAR_LINKS.map((link, index) => {
 
@@ -68,7 +68,7 @@ const DashboardSidebar = () => {
                         )
                     })}
                 </ul>
-                <div className="mt-auto flex flex-col gap-3 w-full">
+                {/* <div className="mt-auto flex flex-col gap-3 w-full">
                     <Container delay={0.3}>
                         <div className="h-10 w-full">
                             <Button
@@ -81,7 +81,7 @@ const DashboardSidebar = () => {
                             </Button>
                         </div>
                     </Container>
-                </div>
+                </div> */}
             </div>
         </div>
     )

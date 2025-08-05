@@ -19,7 +19,7 @@ const DashboardNavbar = () => {
                         </span>
                     </Link>
                 </div>
-                <div className="flex items-center gap-x-2">
+                {/* <div className="flex items-center gap-x-2">
                     <Button
                         size="sm"
                         variant="ghost"
@@ -38,7 +38,7 @@ const DashboardNavbar = () => {
                         </Link>
                     </Button>
                     <MobileSidebar />
-                </div>
+                </div> */}
             </Container>
         </header>
     )

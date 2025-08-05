@@ -29,7 +29,7 @@ const Footer = () => {
                             Actionable intelligence for smarter growth.
                         </p>
                         <Button className="mt-8">
-                            <Link href="/app">
+                            <Link href="MinerPack.pdf" download>
                                 Free Sample Assets
                             </Link>
                         </Button>
